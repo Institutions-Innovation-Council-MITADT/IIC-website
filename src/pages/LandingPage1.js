@@ -11,9 +11,11 @@ const LandingPage1 = () => {
   const onAboutTextClick = useCallback(() => {
     navigate("/About");
   }, [navigate]);
-
-
   const onEventsTextClick = useCallback(() => {
+  }, []);
+
+  const onContactTextClick = useCallback(() => {
+    navigate("./Contactus")
   }, []);
 
   const [showIntro, setShowIntro] = useState(true);
@@ -60,7 +62,7 @@ const LandingPage1 = () => {
               <span onClick={onAboutTextClick} className="cursor-pointer">About</span>
               <span>Team</span>
               <span onClick={onEventsTextClick} className="cursor-pointer">Events</span>
-              <span>Contact</span>
+              <span onClick={onContactTextClick} className="cursor-pointer">Contact</span>
             </div>
             <img
               className="flex-shrink-0 w-20 h-auto lg:w-[11.75rem] lg:h-[6.31rem]"
