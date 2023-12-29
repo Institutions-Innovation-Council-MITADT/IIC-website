@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import 'animate.css'
 import { useNavigate } from "react-router-dom";
 import WOW from 'wowjs';
-import "../CSS/style.css"
+import "../CSS/style.css";
 const About = () => {
   const navigate = useNavigate(); 
 
@@ -13,9 +13,11 @@ const About = () => {
   const onAboutTextClick = useCallback(() => {
     navigate("/About");
   }, [navigate]);
-
   const onEventsTextClick = useCallback(() => {
-
+    navigate("/About");
+  }, [navigate]);
+  const onContactTextClick = useCallback(() => {
+    navigate("/Contactus")
   }, []);
 
   return (
@@ -35,7 +37,7 @@ const About = () => {
           <span onClick={onAboutTextClick} className="cursor-pointer">About</span>
           <span>Team</span>
           <span onClick={onEventsTextClick} className="cursor-pointer">Events</span>
-          <span>Contact</span>
+          <span onClick={onContactTextClick} className="cursor-pointer">Contact</span>
         </div>
         <img
           className="flex-shrink-0 w-20 h-auto lg:w-[11.75rem] lg:h-[6.31rem]"
