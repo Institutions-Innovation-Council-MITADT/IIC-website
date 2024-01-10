@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.con1 a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+}
+.main{
+    position: relative;
+    width: 1050px;
+    height: 700px;
+    background:#fff;
+    left: 200px;
+    top: 50px;
+    box-shadow: 10px;
+    border: 1px solid  #000;
+}
+.img2 img{
+    width: 400px;
+    position:absolute;
+    left: 10px;
+    bottom: 2px;
+}
+.img3 img{
+    width: 30%;
+    height:100%;
+    left: 1100px;
+    top: 200px;
+    z-index: -1;
+}
+.img1{
+    position:absolute;
+    left: 550px;
+    top: 200px;
+    width: 450px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 450px;
+    background: #FFE778;
+}
+.img1 img{
+    position: absolute;
+    bottom: 10px;
+}
+.cont{
+    width: 500px;
+    height: 600px;
+    background: #3D3F86;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+}
+.info1{
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.info1 h2{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.info2{
+    position: absolute;
+    top:150px;
+    left: 50px;
+}
+.info2 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.info2 i{
+    color: #fff;
+}
+.info3{
+    position: absolute;
+    top:250px;
+    left: 50px;
+}
+.info3 p{
+    width: 300px;
+    color: #fff;
+    font-size: 15px;
+    position: relative;
+    left: 30px;
+}
+.info3 i{
+    color: #fff;
+    position: absolute;
+    right: 290px;
+}
+.icon1{
+    position: absolute;
+    top:500px;
+    left: 50px;
+}
+.icon1 i{
+    color: #fff;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.shape1{
+    position: absolute;
+    top: 400px;
+    left:300px;
+    z-index: 1;
+}
+.shape2{
+    position: absolute;
+    top: 425px;
+    left:308px;
+}
+.later{
+    width: 200px;
+    height: 200px;
+    background-color: #F3CC4F;;
+    position: relative;
+    left: 600px;
+    top: 100px;
+    z-index: -1;
+}
+.element{
+    font-size: 200px;
+    color: #FFE878;
+    position: relative;
+    right: 250px;
+    top: 50px;
+    z-index: -1;
+}
+.footer{
+    width:100%;
+    height: 700px;
+    background-color: black;
+    margin-top: 100px;
+}
+.line1{
+    width: 38%;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 50px;
+}
+.footer .content{
+    color: #fff;
+    position: relative;
+    top: 36px;
+    text-align: center;
+    font-size: 18px;
+}
+.line2{
+    width: 39%;
+    height: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+    left: 930px;
+}
+.foot-content{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 400px;
+    top: 70px;
+}
+.box1{
+    width: 200px;
+    height: 300px;
+    color:#fff
+}
+.c1{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.line3{
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+hr{
+    position: relative;
+    bottom: 10px;
+}
+.links{
+    width: 100px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.b1{
+    padding-top: 20px;
+}
+.box2{
+    width: 200px;
+    height: 300px;
+    color: #fff;
+}
+.c2{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.line3{
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.socials{
+    width: 100px;
+    height: 200px;
+    position: relative;
+    top: 30px;
+}
+.box3{
+    width: 200px;
+    height: 300px;
+    color: #fff;
+}
+.b2{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #fff;
+}
+.b3{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.b4{
+        width: 50px;
+        height: 50px;
+        border-radius:50%;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+.b5{
+        width: 50px;
+        height: 50px;
+        border-radius:50%;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+.socials i{
+    color:black;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size:20px;
+}
+.c3{
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.box4{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.box5{
+    font-size: 20px;
+    padding-top: 20px;
+}
