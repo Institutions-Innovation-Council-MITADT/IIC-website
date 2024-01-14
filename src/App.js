@@ -11,6 +11,7 @@ import LandingPage1 from "./pages/LandingPage1";
 import LandingPage2 from "./pages/LandingPage2";
 import About from "./pages/About";
 import Contactus from "./pages/Contactus";
+import Events from "./pages/Events";
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -53,6 +54,7 @@ function App() {
       <Route path="/LandingPage2" element={<LandingPage2 />} />
       <Route path="/About" element={<About />} />
       <Route path="/Contactus" element={<Contactus />}/>
+      <Route path="/Events" element={<Events />}/>
     </Routes>
   );
 }
