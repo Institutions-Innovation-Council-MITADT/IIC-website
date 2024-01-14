@@ -1,5 +1,4 @@
 import { useCallback } from "react";
-import 'animate.css'
 import { useNavigate } from "react-router-dom";
 import WOW from 'wowjs';
 import Footer from '../Components/Footer';
