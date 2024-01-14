@@ -142,6 +142,9 @@
     top: 50px;
     z-index: -1;
 }
+.bg-img{
+    background: url('../../public/team_bg.png') repeat-y center fixed;
+}
 .footer{
     width:100%;
     height: 700px;
