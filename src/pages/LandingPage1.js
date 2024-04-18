@@ -135,9 +135,3 @@ const LandingPage1 = () => {
 };
 
 export default LandingPage1;
-ReactDOM.render(
-  <React.StrictMode>
-    <LandingPage1 />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
