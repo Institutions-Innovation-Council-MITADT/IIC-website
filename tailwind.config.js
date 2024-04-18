@@ -16,7 +16,8 @@ module.exports = {
         "whyte-inktrap": "'Whyte Inktrap'",
         inter: "Inter",
         "source-sans-pro": "'Source Sans Pro'",
-        "barlow-semi-condensed": "'Barlow Semi Condensed'"
+        "barlow-semi-condensed": "'Barlow Semi Condensed'",
+        "goblin":"'Goblin One'",
       },
       borderRadius: {
         "26xl-6": "45.6px",

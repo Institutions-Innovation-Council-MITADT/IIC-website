@@ -3,9 +3,8 @@ export class Footer extends Component {
   render() {
     return (
       <>
-       <div className="later font-source-sans-pro">
-        <div className="element">INVENT</div>
-     </div>
+       <div className="later font-source-sans-pro">     
+       </div>
         <div className="footer">
         <div className="line1"></div>
         <div className="content">INSTITUTION’S INNOVATION COUNCIL</div>

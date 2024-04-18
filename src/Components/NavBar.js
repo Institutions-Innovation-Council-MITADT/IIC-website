@@ -9,6 +9,10 @@ const NavBar = () => {
     navigate("/");
   }, [navigate]);
 
+  const onTeamTextClick = useCallback(() => {
+    navigate("/Team");
+  }, [navigate]);
+
   const onAboutTextClick = useCallback(() => {
     navigate("/About");
   }, [navigate]);
@@ -31,7 +35,7 @@ const NavBar = () => {
       <div className="flex-shrink-0 space-x-[0.3rem] lg:space-x-[1.5rem]">
         <span onClick={onHomeTextClick} className="cursor-pointer">Home</span>
         <span onClick={onAboutTextClick} className="cursor-pointer">About</span>
-        <span>Team</span>
+        <span onClick={onTeamTextClick} className="cursor-pointer">Teams</span>
         <span onClick={onEventsTextClick} className="cursor-pointer">Events</span>
         <span onClick={onContactTextClick} className="cursor-pointer">Contact</span>
       </div>

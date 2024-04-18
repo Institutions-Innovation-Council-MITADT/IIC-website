@@ -20,9 +20,9 @@ const Contactus = () => {
         navigate("/Contactus")
     }, []);
     return (
-        <div>
+        <div className="background-container">
             <NavBar />
-            <div className="img2 font-source-sans-pro">
+            <div className="img2 font-source-sans-pro" style={{ marginBottom: '20rem' }}>
                 <img src="./Polygon 1.png" alt="polygon" />
                 <div className="main">
                     <div className="cont">
@@ -34,18 +34,18 @@ const Contactus = () => {
                             <h4>Building Connections that last</h4>
                         </div>
                         <div className="info2 animate__animated animate__fadeInLeft">
-                            <i className="fa-solid fa-envelope"></i>
-                            <a href="mailto:innovation@mituniversity.edu.in">innovation@mituniversity.edu.in</a>
+                            <i className="fa-solid fa-envelope fa-lg"></i>
+                            <a href="mailto:innovation@mituniversity.edu.in">&nbsp;&nbsp;&nbsp;innovation@mituniversity.edu.in</a>
                         </div>
                         <div className="info3 animate__animated animate__fadeInLeft">
-                            <i className="fa-solid fa-location-dot"></i>
-                            <p>New IT Building, N-602, MIT ADT University, Rajbaugh, Solapur - Pune Hwy, near Bharat Petrol Pump, Loni Kalbhor, Maharashtra 412201</p>
+                            <i className="fa-solid fa-location-dot fa-lg"></i>
+                            <p style={{ marginTop: '-12px',  fontSize: '16px' }}> New IT Building, N-602, MIT ADT University, Rajbaugh, Solapur - Pune Hwy, near Bharat Petrol Pump, Loni Kalbhor, Maharashtra 412201</p>
                         </div>
                         <div className="icon1 animate__animated animate__fadeInDown">
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-linkedin"></i>
-                            <i className="fa-brands fa-square-facebook"></i>
-                            <i className="fa-solid fa-x"></i>
+                            <i className="fa-brands fa-instagram fa-lg"></i>
+                            <i className="fa-brands fa-linkedin fa-lg"></i>
+                            <i className="fa-brands fa-square-facebook fa-lg"></i>
+                            <i className="fa-solid fa-x fa-lg"></i>
                         </div>
                         <div className="shape1 animate__animated animate__fadeInUp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="137" height="137" viewBox="0 0 137 137" fill="none">

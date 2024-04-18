@@ -1,23 +1,30 @@
 import { useCallback, useState } from "react";
 import styles from './LandingPage1.module.css'
 import {useNavigate} from "react-router-dom";
+import ReactDOM from 'react-dom'; 
 const LandingPage1 = () => {
   const navigate = useNavigate();
-  const onHomeTextClick = useCallback(() => {
-    navigate("/")
   
-  }, [navigate]); 
-
-  const onAboutTextClick = useCallback(() => {
-    navigate("/About");
-  }, [navigate]);
-  const onEventsTextClick = useCallback(() => {
-  }, []);
-
-  const onContactTextClick = useCallback(() => {
-    navigate("./Contactus")
-  }, []);
-
+    const onHomeTextClick = useCallback(() => {
+      navigate("/");
+    }, [navigate]);
+  
+    const onTeamTextClick = useCallback(() => {
+      navigate("/Team");
+    }, [navigate]);
+  
+    const onAboutTextClick = useCallback(() => {
+      navigate("/About");
+    }, [navigate]);
+  
+    const onEventsTextClick = useCallback(() => {
+      navigate("/Events");
+    }, []);
+  
+    const onContactTextClick = useCallback(() => {
+      navigate("/Contactus");
+    }, [navigate]);
+  
   const [showIntro, setShowIntro] = useState(true);
   const [showNav, setShowNav] = useState(true);
   const [showRocket, setShowRocket] = useState(false);
@@ -60,7 +67,7 @@ const LandingPage1 = () => {
             <div className="flex-shrink-0 space-x-[0.3rem] lg:space-x-[1.5rem]">
               <span onClick={onHomeTextClick} className="cursor-pointer">Home</span>
               <span onClick={onAboutTextClick} className="cursor-pointer">About</span>
-              <span>Team</span>
+              <span onClick={onTeamTextClick} className="cursor-pointer">Teams</span>
               <span onClick={onEventsTextClick} className="cursor-pointer">Events</span>
               <span onClick={onContactTextClick} className="cursor-pointer">Contact</span>
             </div>
@@ -123,7 +130,14 @@ const LandingPage1 = () => {
       )}
 
     </div>
+  
   );
 };
 
 export default LandingPage1;
+ReactDOM.render(
+  <React.StrictMode>
+    <LandingPage1 />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

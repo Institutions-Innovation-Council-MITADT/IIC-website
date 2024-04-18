@@ -1,7 +1,10 @@
+
 *{
     margin: 0;
     padding: 0;
+
 }
+
 .container{
     width: 100%;
     height: 100vh;
@@ -18,6 +21,7 @@
     padding-left: 20px;
     color: black;
 }
+
 .main{
     position: relative;
     width: 1050px;
@@ -26,7 +30,7 @@
     left: 30rem;
     top: 15rem;
     box-shadow: 10px;
-    border: 1px solid  #000;
+    border-radius: 20px;
 }
 .img2 img{
     width: 400px;
@@ -41,20 +45,22 @@
     left: 75%;
     top: 200px;
     z-index: -1;
+    
 }
+
 .img1{
-    position:absolute;
+    position: absolute;
     left: 550px;
-    top: 200px;
-    width: 450px;
-    height: 200px;
+    top: 180px;
+    width: 550px;
+    height: 350px;
     flex-shrink: 0;
-    border-radius: 450px;
+    border-radius: 50%; /* Use 50% for a perfect circle */
     background: #FFE778;
 }
 .img1 img{
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    margin-top: -10rem;
 }
 .cont{
     width: 500px;
@@ -127,9 +133,6 @@
     left:308px;
 }
 .later{
-    width: 200px;
-    height: 200px;
-    background-color: #F3CC4F;;
     position: relative;
     left: 52rem;
     top: 100px;
@@ -150,7 +153,6 @@
     width:100%;
     height: 700px;
     background-color: black;
-    margin-top: 9rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
