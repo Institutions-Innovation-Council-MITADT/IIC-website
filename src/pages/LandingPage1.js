@@ -4,7 +4,9 @@ import {useNavigate} from "react-router-dom";
 import ReactDOM from 'react-dom'; 
 const LandingPage1 = () => {
   const navigate = useNavigate();
-  
+  const isSmallScreen = () => {
+    return window.matchMedia("(max-width: 640px)").matches;
+  };
     const onHomeTextClick = useCallback(() => {
       navigate("/");
     }, [navigate]);
@@ -102,27 +104,33 @@ const LandingPage1 = () => {
         <>
           <img
             style={{
-              width: '100vw',
-              height: '120vh', 
-              position: 'absolute', 
+              width: isSmallScreen() ? '200vw' : '100vw', // 50% less width if screen is small
+              height: isSmallScreen() ? '120vh' : '120vh', // 50% less height if screen is small
+              position: 'absolute',
               zIndex: 1,
             }}
             className={`absolute ${showRocket ? styles.asteroidAnimation : ''}`}
             alt="Rocket And Asteroids"
             src="/asteroids.png"
+
           />
 
           <img
             className={`absolute ${showRocket ? styles.rocketAnimation : ''}`}
             alt="Rocket And Asteroids"
             src="/Rocket.png"
+            style={{
+              width: isSmallScreen() ? '70%' : 'auto',
+              height: 'auto',
+              marginTop: isSmallScreen() ? '12rem' : '0', // Add margin top 4rem if screen is small
+            }}
           />
         </>
       )}/
 
       {showText && (
-        <div className={`absolute ${showText ? styles.textAnimation : ''}`}>
-          <span>Innovation</span><br />
+        <div className={`absolute ${showText ? styles.textAnimation : ''}`} style={{ fontSize: isSmallScreen() ? '2rem' : '3rem' }}>
+        <span>Innovation</span><br />
           <span>Inspiration</span><br />
           <span>Ideation</span><br />
           <span>    </span>

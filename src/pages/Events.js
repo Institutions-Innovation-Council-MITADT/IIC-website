@@ -6,7 +6,27 @@ import EventsContainer from "../Components/Events/EventsContainer";
 import FrameComponent1 from "../Components/Events/FrameComponent1";
 import FrameComponent from "../Components/Events/FrameComponent";
 import Footer from '../Components/Footer';
+import { useState, useEffect } from "react";
+
 const Events = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  useEffect(() => {
+    const checkScreenSize = () => {
+        const isSmall = window.matchMedia("(max-width: 640px)").matches;
+        console.log("Is small screen:", isSmall);
+        setIsSmallScreen(isSmall);
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Add event listener for screen size changes
+    window.addEventListener("resize", checkScreenSize);
+
+    // Remove event listener on component unmount
+    return () => window.removeEventListener("resize", checkScreenSize);
+}, []);
+
   return (
     <div>
     <NavBar />
@@ -14,6 +34,10 @@ const Events = () => {
         width: '100vw',  //full screen
         position: 'absolute',
         zIndex: 2,
+        width: isSmallScreen ? '100vw' : '100vw', // decrease size if small screen
+        marginTop: isSmallScreen ? '-6rem' : 'auto', // conditional margin top
+        position: 'absolute',
+        zIndex: 1,
       }}
         className="animate__animated animate__fadeInDown absolute top-[11rem] left-0 object-contain"
         src="/eventsbanner.png"

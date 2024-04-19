@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './contact-page.css';
 import Footer from '../Components/Footer';
@@ -19,15 +19,35 @@ const Contactus = () => {
     const onContactTextClick = useCallback(() => {
         navigate("/Contactus")
     }, []);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.matchMedia("(max-width: 640px)").matches);
+    };
+    
+
+    // Initial check
+    checkScreenSize();
+
+    // Add event listener for screen size changes
+    window.addEventListener("resize", checkScreenSize);
+
+    // Remove event listener on component unmount
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
     return (
-        <div className="background-container">
+        <div style={isSmallScreen ? {  overflow: 'hidden', maxWidth: '100vw' } : {}}  className="background-container">
             <NavBar />
-            <div className="img2 font-source-sans-pro" style={{ marginBottom: '20rem' }}>
+            <div  style={{
+        marginLeft: isSmallScreen ? '-100rem' : 'auto', // conditional margin top
+        zIndex: 1,
+      }}className="img2 font-source-sans-pro" style={{ marginBottom: '20rem' }}>
                 <img src="./Polygon 1.png" alt="polygon" />
                 <div className="main">
                     <div className="cont">
                         <div className="img1 animate__animated animate__fadeInRight">
-                            <img src="young-man.png" alt="young man" />
+                            <img  src="young-man.png" alt="young man" />
                         </div>
                         <div className="info1 animate__animated animate__fadeInLeft">
                             <h2>Contact Information</h2>
@@ -63,8 +83,13 @@ const Contactus = () => {
                 </div>
                 <div className="img3">
                     <img src="Polygon 2.png" alt="" />
-                </div>
+                
             </div>
+            </div>
+                <section style={{fontSize: isSmallScreen ? '3rem' : '15rem'}} className="font-goblin text-yellow-200 text-[15rem] uppercase text-center">
+        Inquire
+      </section>
+         
             <Footer />
         </div>
     )

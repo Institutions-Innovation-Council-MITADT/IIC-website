@@ -18,6 +18,7 @@ module.exports = {
         "source-sans-pro": "'Source Sans Pro'",
         "barlow-semi-condensed": "'Barlow Semi Condensed'",
         "goblin":"'Goblin One'",
+        "sen": "'Sen'",
       },
       borderRadius: {
         "26xl-6": "45.6px",
