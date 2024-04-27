@@ -42,7 +42,8 @@ const Contactus = () => {
             <div  style={{
         marginLeft: isSmallScreen ? '-100rem' : 'auto', // conditional margin top
         zIndex: 1,
-      }}className="img2 font-source-sans-pro" style={{ marginBottom: '20rem' }}>
+        marginBottom: '20rem'
+      }}className="img2 font-source-sans-pro" >
                 <img src="./Polygon 1.png" alt="polygon" />
                 <div className="main">
                     <div className="cont">

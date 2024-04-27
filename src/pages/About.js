@@ -29,8 +29,8 @@ const About = () => {
       <NavBar />
       <img
        style={{
-        width: isSmallScreen ? '100vw' : '100vw', // decrease size if small screen
-        marginTop: isSmallScreen ? '-6rem' : 'auto', // conditional margin top
+        width: isSmallScreen ? '100vw' : '100vw', 
+        marginTop: isSmallScreen ? '-6rem' : 'auto', 
         position: 'absolute',
         zIndex: 1,
       }}

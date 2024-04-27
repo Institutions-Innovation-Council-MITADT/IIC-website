@@ -40,16 +40,16 @@ const Team = () => {
         style={{
           width: '100vw',  //full screen
           zIndex: 1,  
-          marginTop: isSmallScreen ? '-7rem' : 'auto', // conditional margin top
+          marginTop: isSmallScreen ? '-7rem' : 'auto', 
         }}
         className="animate__animated animate__fadeInDown absolute top-[11rem] left-0 object-contain"
         src="/team_banner.png"
       />
       {Object.entries(teams).map(([teamName, teamMembers], index) => (
         <div key={teamName} style={{ marginTop: isSmallScreen ? index === 0 ? "10rem" : "3rem" :  index === 0 ? "30rem" : "8rem", textAlign: "center" }}>
-          <img src={`/${teamName}.png`} alt={teamName} style={{ width: isSmallScreen ? '100%' : 'auto',  marginTop: isSmallScreen ? '-90rem' : 'auto' // decrease size if small screen
+          <img src={`/${teamName}.png`} alt={teamName} style={{ width: isSmallScreen ? '100%' : 'auto',  marginTop: isSmallScreen ? '-90rem' : 'auto' 
           }} />
-          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", marginLeft: isSmallScreen ? '1rem' : '10rem', // decrease size if small screen
+          <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", marginLeft: isSmallScreen ? '1rem' : '10rem', 
           }}>
             {teamMembers.members.map((member, index) => (
               <div key={index} style={{ width: isSmallScreen ? '35%' : '20%', padding: "1.5rem" }}>

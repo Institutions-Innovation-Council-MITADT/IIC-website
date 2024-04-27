@@ -31,11 +31,11 @@ const Events = () => {
     <div>
     <NavBar />
     <img style={{
-        width: '100vw',  //full screen
+        width: '100vw',
         position: 'absolute',
         zIndex: 2,
-        width: isSmallScreen ? '100vw' : '100vw', // decrease size if small screen
-        marginTop: isSmallScreen ? '-6rem' : 'auto', // conditional margin top
+        width: isSmallScreen ? '100vw' : '100vw',
+        marginTop: isSmallScreen ? '-6rem' : 'auto', 
         position: 'absolute',
         zIndex: 1,
       }}
@@ -80,7 +80,7 @@ const Events = () => {
           src="/ellipse-6.svg"
         />
         <img
-          className="absolute top-[-7rem] left-[40rem] w-[41.063rem] h-[19.438rem] z-[1]"
+          className="absolute top-[-7rem] left-[40rem] w-[41.063rem] h-[19.438rem] z-[0]"
           alt=""
           src="/ellipse-9-1.svg"
         />
