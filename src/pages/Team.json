@@ -34,7 +34,9 @@
       { "name": "Harshwardhan Jatal", "link": "PhotoShoot/Design/Harshwardhan_Jatal.jpg", "position": "Designer" },
       { "name": "Revant Katuri", "link": "PhotoShoot/Design/Revant_Katuri.jpg", "position": "Designer" },
       { "name": "Sarthak Salunke", "link": "PhotoShoot/Design/Sarthak_Salunke.jpg", "position": "Designer" },
-      { "name": "Tanuja Jagtap", "link": "PhotoShoot/Design/Tanuja_Jagtap.jpg", "position": "Designer" }
+      { "name": "Tanuja Jagtap", "link": "PhotoShoot/Design/Tanuja_Jagtap.jpg", "position": "Designer" }, 
+      { "name": "Yashvendra Dhandal", "link": "PhotoShoot/Design/Yashvendra_Dhandal.jpg", "position": "Lead" }
+
     ]
   },
   "Faculties": {
